@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+  font-size: 16px;
+}
+.contact-form {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+.container {
+  width: 40%;
+  padding: 16px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.name-box {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.right,
+.left,
+.box {
+  width: 50%;
+}
+.name,
+.mail,
+.message,
+.box {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: solid hsl(186, 15%, 59%) 2px;
+  border-radius: 5px;
+}
+.box {
+  font-weight: 400;
+  padding-left: 10px;
+}
+.box:hover {
+  background-color: hsl(148, 38%, 91%);
+}
+.star {
+  color: hsl(169, 82%, 27%);
+}
+.query {
+  accent-color: hsl(169, 82%, 27%);
+}
+.checkbox {
+  margin: 20px 0px;
+}
+.error {
+  border-color: hsl(0, 66%, 54%);
+}
+.success {
+  border-color: hsl(120, 61%, 45%);
+}
+.valid {
+  font-size: 0.7rem;
+  line-height: 1;
+  font-weight: 700;
+  visibility: hidden;
+}
+.v_error {
+  visibility: visible;
+  color: hsl(0, 66%, 54%);
+}
+.v_success {
+  visibility: visible;
+  color: hsl(120, 61%, 45%);
+}
+.submit {
+  font-size: 16px;
+  background-color: hsl(169, 82%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 12px;
+  border: solid hsl(187, 24%, 22%) 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  opacity: 0.8;
+  text-align: center;
+}
+.submit:hover {
+  opacity: 1;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 80%;
+  }
+  .name-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="from">
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="contact-form" id="contact-form">
+        <div class=" container">
+            <h1>Contact Us</h1>
+            <div class="form-control name-box">
+                <div class="right">
+                    <label for="fname">First Name <span class="star">*</span></label>
+                    <br>
+                    <input class="name" type="text" placeholder="First Name" name="fname" id="fname">
+                    <br>
+                    <span class="valid"></span>
+                </div>
+
+                <div class="left">
+                    <label for="lname">Last Name <span class="star">*</span></label>
+                    <br>
+                    <input class="name" type="text" placeholder="Last Name" name="lname" id="lname">
+                    <br>
+                    <span class="valid"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form_control">
+                <label for="mail">Email Address <span class="star">*</span></label>
+                <br>
+                <input class="mail" type="text" placeholder="Mail" name="mail" id="mail">
+                <br>
+                <span class="valid"></span>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="query">Query Type <span class="star">*</span></label>
+                <div class="name-box">
+                    <div class=" box box1" id="box1">
+                        <input class="query" onchange="box1queryhandler()" type="radio" name="query" id="query">
+                        <label for="query">General Enquiry </label>
+                    </div>
+                    <div class=" box box2" id="box2">
+                        <input class="query" onchange="box2queryhandler()" type="radio" name="query" id="query">
+                        <label for="query">Support Request</label>
+                    </div>
+                </div>
+                <span class="valid" id="query-error"></span>
+            </div>
+            <br>
+            <div class="form_control">
+                <label for="message">Message <span class="star">*</span></label>
+                <textarea class="message" id="message" rows="4" cols="50"></textarea>
+                <span class="valid"></span>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="click" id="click">
+                <label>I consent to being contacted by the team <span class="star">*</span></label>
+                <br>
+                <span class="valid" id="check-error"></span>
+            </div>
+            <button class="submit" id="submit" onclick="form_submit()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
